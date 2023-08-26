@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- <header class="bg-gray-500 py-4">
+        <div class="container mx-auto text-white text-center">
+            <h1 class="text-3xl font-semibold">DJANGO Authentication</h1>
+        </div>
+    </header> -->
+
+
+    <nav class="bg-gray-600 p-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-white font-semibold text-xl">Django Custom User_Authentication </div>
+            <div class="space-x-4">
+                <a href="/"
+                    class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition duration-300">Home</a>
+                <a href="/Logout"
+                    class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">Logout</a>
+            </div>
+        </div>
+    </nav><br>
+    <h1 class="text-4xl font-semibold text-gray-800 mb-6  text-center">Welcome {{request.user.first_name}} !</h1>
+    <main class="container mx-auto mt-8">
+        <div class="bg-white p-8 shadow-md">
+            <h2 class="text-2xl font-semibold mb-4">Django Blog</h2>
+            <p class="text-gray-700">
+                Custom User Model (Optional but Recommended): A custom user model can be created by extending Django's
+                built-in user model classes, such as AbstractUser or AbstractBaseUser. This approach enables the
+                inclusion of additional fields, such as email, to support email-based authentication.
+                <br>
+                Custom Authentication Backend: Developers can design a custom authentication backend class that inherits
+                from django.contrib.auth.backends.ModelBackend. This class can override the authenticate method to
+                enable authentication based on user-provided email and password combinations.
+                <br>
+                Settings Configuration: Within the project's settings, the AUTHENTICATION_BACKENDS list needs to be
+                updated to include the path to the custom authentication backend. This informs Django to use the newly
+                implemented email-based authentication mechanism.
+                <br>
+                Login View: A customized login view should be developed to accommodate the use of email and password for
+                authentication. This might involve adapting templates and forms to align with the email-based approach.
+
+                <br>
+
+                <b>Custom User Models and Authentication Backends:</b><br>
+                Developers should create comprehensive documentation to guide fellow developers in effectively
+                integrating the email-based authentication system. User guides should also be provided to assist
+                end-users in tasks like logging in, resetting passwords, and registering accounts using the new
+                email-oriented approach.
+                <br>
+                Maintenance and Updates: Regular maintenance is crucial to ensure the authentication system remains
+                secure and efficient. Staying informed about updates in Django's official documentation is important to
+                ensure compatibility and adherence to best practices.....
+            </p>
+            <br>
+            <p class="text-gray-700 mt-2">Published on: August 19, 2023</p>
+            <!-- <a href="#" class="text-blue-500 mt-4 inline-block">Read more</a> -->
+        </div>
+    </main>
+    <br><br><br><br><br>
+    <footer class="bg-gray-400 py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Arfan's Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
