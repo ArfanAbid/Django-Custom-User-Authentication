@@ -40,7 +40,7 @@ This repository contains an example implementation of custom user authentication
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a  pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request.
          
 
 
